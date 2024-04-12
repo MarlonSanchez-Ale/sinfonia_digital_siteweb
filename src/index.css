@@ -30,11 +30,11 @@ body {
     }
 
     .subtitle {
-        @apply font-rubik text-bluesd text-2xl
+        @apply font-rubik text-gray-500 text-2xl
     }
 
     .description {
-        @apply font-rubik text-gray-500 text-base
+        @apply font-rubik text-gray-500 text-lg
     }
 
 }

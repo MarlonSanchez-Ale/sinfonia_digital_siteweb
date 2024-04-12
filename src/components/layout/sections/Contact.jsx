@@ -8,18 +8,16 @@ export default function Contact() {
     const UrlWhatsapp = "https://wa.link/k7p4p9"
 
     return (
-        <section id="contact" className="flex flex-col gap-10 justify-center min-h-[90vh] my-30">
+        <section id="contact" className="flex flex-col gap-10 justify-center lg:min-h-[90vh] my-40">
             <div className="flex flex-col gap-3 justify-center">
-                <h2 className="title_principal">Compartinos tus <span className="title_contrast">ideas</span></h2>
-                <p className="description">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
+                <h2 className="title_principal">Compartínos tus <span className="title_contrast">ideas</span></h2>
+                <p className="description"></p>
             </div>
-            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-20 mt-10">
-                <div className="flex flex-col sm:order-last md:order-first justify-start text-start gap-3">
-                    <h5 className=" font-nourd text-xl text-bluesd">Estamos listos para  iniciar con la creatividad</h5>
+            <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-20 mt-10">
+                <div className="flex flex-col sm:order-last md:order-first justify-start place-items-start text-start gap-3">
+                    <h5 className=" font-nourd text-xl text-bluesd">¿Estás listo para dar el primer paso?</h5>
                     <p className="description">
-                        Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor
-                        sit amet Imperdiet Lorem ipsum dolor sit amet consectetur sit amet . Imperdiet Lorem ipsum dolor
-                        sit amet consectetur
+                        Tu marca merece trabajar en las mejores manos. ¡Estaremos contentos de comenzar una nueva experiencia con vos! 
                     </p>
                     <div className="flex flex-row gap-3 justify-start">
                         <span onClick={() => window.open(UrlFacebook, '_blank')} className=' rounded-full border border-gray-900/5 bg-gray-900/5 p-2 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70'>

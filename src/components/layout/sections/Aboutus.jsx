@@ -7,39 +7,30 @@ export default function Aboutus() {
     <section id="aboutus" className=" min-h-[90vh] flex flex-col gap-10 justify-center my-20">
       <div className="flex flex-col gap-3 justify-center">
         <h2 className="title_principal">Somos Sinfonía <span className="title_contrast">Digital</span></h2>
-        <p className="description">Lorem ipsum dolor sit amet consectetur. Imperdiet convallis blandit felis ligula aliquam</p>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
         <div className='grid place-items-center'>
-          <img src={Laptop} loading='lazy' className='' />
+          <img src={Laptop} loading='lazy' className=' w-96 h-96'  />
         </div>
         <div className='flex flex-col justify-center gap-5'>
-        <p className='description text-start'>
-            A software engineer, the modern-day architect of digital realms, navigates the ethereal landscapes of code,
+          <p className='description text-start'>
+            Impulsamos el éxito de tu marca a través de estrategias innovadoras y creativas. Te proponemos soluciones personalizadas
+            que te ayudarán a alcanzar tus objetivos. Desde el diseño de campañas impactantes hasta la implementación de estrategias digitales
+            efectivas, somos tu mejor aliado en el camino hacia el crecimiento y la excelencia.
           </p>
           <p className='description text-start'>
-            A software engineer, the modern-day architect of digital realms, navigates the ethereal landscapes of code,
-            sculpting intangible structures that shape our technological world. With fingers poised over keyboards like
-            virtuoso pianists, they compose symphonies of logic, their minds a labyrinth of algorithms and solutions.Their
-            canvas is a screen, a vast expanse where lines of code dance in intricate patterns, weaving the fabric of programs
-            and applications.
-          </p>
-          <p className='description text-start'>
-            A software engineer, the modern-day architect of digital realms, navigates the ethereal landscapes of code,
-            sculpting intangible structures that shape our technological world. With fingers poised over keyboards like
-            virtuoso pianists, they compose symphonies of logic, their minds a labyrinth of algorithms and solutions.Their
-            canvas is a screen, a vast expanse where lines of code dance in intricate patterns, weaving the fabric of programs
-            and applications.
+            Te brindamos una experiencia más humana que construye una comunicación más asertada y directa en tus redes sociales,
+            landing pages y sitios web. ¡Comenzá tu aventura creativa con nosotros!
           </p>
           <Typography
             as="li"
             variant="small"
             color="blue-gray"
-            className=" font-rubik bg-yellowsd rounded-md p-3 w-40 shadow-md hover:bg-bluesd mt-3"
+            className=" font-rubik bg-yellowsd rounded-md p-3 sm:w-full md:w-44 shadow-md hover:bg-bluesd mt-3"
           >
-            <a href="#" className="flex text-rubik items-center text-gray-100 transition-colors gap-5">
+            <a href="#contact" className="flex text-rubik text-lg justify-between items-center text-gray-100 transition-colors gap-5">
               Conocé más
-              <AiOutlineArrowRight size={20} />
+              <AiOutlineArrowRight size={25} />
             </a>
 
           </Typography>

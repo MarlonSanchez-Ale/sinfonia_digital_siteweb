@@ -10,24 +10,24 @@ export default function Hero() {
   const UrlWhatsapp = "https://wa.link/k7p4p9"
 
   return (
-    <section id="hero" className="min-h-[90vh] grid sm:grid-cols-1 lg:grid-cols-2 gap-5 ">
+    <section id="hero" className="lg:min-h-[90vh] grid sm:grid-cols-1 lg:grid-cols-2 gap-5 ">
       <div className='grid place-items-center'>
         <img src={Bombilla} loading='lazy' className=' md:w-96 md:h-96' />
       </div>
       <div className='flex flex-col gap-2 justify-center'>
         <div className='flex flex-col gap-2'>
-          <p className='description text-start'>Sinfonía Digital</p>
-          <h1 className='title_principal text-start'>Un equipo apasionado por el mundo digital y <span className='title_contrast'> la publicidad</span></h1>
-          <p className='description text-start'>Execute SEO, content marketing, competitor research, PPC, and social media marketing in one platform.</p>
+          <p className='description text-start'>Agencia creativa</p>
+          <h1 className='title_principal text-start'>Un equipo apasionado por el marketing <span className='title_contrast'>digital</span></h1>
+          <p className='subtitle text-start'>¡Convertimos la visión de tu marca en realidad!</p>
         </div>
         <div className='flex flex-row gap-5'>
           <Typography
             as="li"
             variant="small"
             color="blue-gray"
-            className=" font-rubik bg-yellowsd rounded-md p-3  shadow-md hover:bg-bluesd mt-3"
+            className=" font-rubik bg-yellowsd rounded-md p-3 w-32  shadow-md hover:bg-bluesd mt-3"
           >
-            <a href="#" className="flex text-rubik items-center text-gray-100 transition-colors">
+            <a href="#contact" className="flex text-rubik items-center text-gray-100 transition-colors">
               Conocé más
             </a>
           </Typography>
