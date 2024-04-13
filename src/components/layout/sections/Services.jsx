@@ -35,18 +35,18 @@ export default function Services() {
                 <div className="grid sm:grid-cols-1  md:grid-cols-2  ">
                     <div className="flex flex-col md:pl-14 lg:pl-40 sm:order-last md:order-first  gap-2 text-start">
                         <div className="">
-                        <h5 className=" font-nourd text-bluesd text-xl">Diseño</h5>
-                        <p className="description">
-                            <span className="text-yellowsd mr-3">✔</span>
-                            Libro de marca.
-                        </p>
-                        <p className="description">
-                            <span className="text-yellowsd mr-3">✔</span>
-                            Logo.
-                        </p><p className="description">
-                            <span className="text-yellowsd mr-3">✔</span>
-                            Branding.
-                        </p>
+                            <h5 className=" font-nourd text-bluesd text-xl">Diseño</h5>
+                            <p className="description">
+                                <span className="text-yellowsd mr-3">✔</span>
+                                Libro de marca.
+                            </p>
+                            <p className="description">
+                                <span className="text-yellowsd mr-3">✔</span>
+                                Logo.
+                            </p><p className="description">
+                                <span className="text-yellowsd mr-3">✔</span>
+                                Branding.
+                            </p>
                         </div>
                     </div>
                     <div className="flex sm:order-first md:order-last sm:flex-col md:flex-row sm:place-items-end md:place-items-center justify-center sm:text-start gap-5 ">

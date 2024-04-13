@@ -17,7 +17,7 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="text-rubik flex items-center hover:text-yellowsd transition-colors">
+                <a href="#hero" className="text-rubik flex items-center hover:text-yellowsd transition-colors">
                     Inicio
                 </a>
             </Typography>
@@ -27,7 +27,7 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex text-rubik items-center hover:text-yellowsd transition-colors">
+                <a href="#aboutus" className="flex text-rubik items-center hover:text-yellowsd transition-colors">
                     Somos SD
                 </a>
             </Typography>
@@ -37,7 +37,7 @@ function NavList() {
                 color="blue-gray"
                 className="p-1 font-medium"
             >
-                <a href="#" className="flex text-rubik items-center hover:text-yellowsd transition-colors">
+                <a href="#services" className="flex text-rubik items-center hover:text-yellowsd transition-colors">
                     Servicios
                 </a>
             </Typography>
@@ -47,7 +47,7 @@ function NavList() {
                 color="blue-gray"
                 className=" font-rubik bg-yellowsd rounded-md p-2 shadow-md hover:bg-bluesd"
             >
-                <a href="#" className="flex text-rubik items-center text-gray-100 transition-colors">
+                <a href="#contact" className="flex text-rubik items-center text-gray-100 transition-colors">
                     Contacto
                 </a>
             </Typography>

@@ -33,7 +33,7 @@ export default function Footer() {
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="#hero"
                             color="blue-gray"
                             className="font-normal font-rubik transition-colors text-gray-500"
                         >
@@ -43,7 +43,7 @@ export default function Footer() {
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="#aboutus"
                             color="blue-gray"
                             className="font-normal font-rubik transition-colors text-gray-500"
                         >
@@ -53,7 +53,7 @@ export default function Footer() {
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="#services"
                             color="blue-gray"
                             className="font-normal font-rubik transition-colors text-gray-500"
                         >
@@ -63,7 +63,7 @@ export default function Footer() {
                     <li>
                         <Typography
                             as="a"
-                            href="#"
+                            href="#contact"
                             color="blue-gray"
                             className="font-normal transition-colors text-gray-500"
                         >

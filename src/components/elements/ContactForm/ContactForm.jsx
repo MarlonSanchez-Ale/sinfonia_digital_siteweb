@@ -88,9 +88,9 @@ export default function ContactForm() {
                             onChange={(val) => setValue("user_subject", val)}
                         >
                             <Option value="Redes sociales" className="text-start">Redes sociales</Option>
-                            <Option value="Posicionamiento de marca" className="text-start">Diseño</Option>
-                            <Option value="Branding" className="text-start">Estrategias</Option>
-                            <Option value="Sitios web" className="text-start">Desarrollo web</Option>
+                            <Option value="Diseño" className="text-start">Diseño</Option>
+                            <Option value="Estrategias" className="text-start">Estrategias</Option>
+                            <Option value="Desarrollo web" className="text-start">Desarrollo web</Option>
                         </Select>
                         <p>{errors.user_subject?.message}</p>
                     </div>
@@ -112,7 +112,7 @@ export default function ContactForm() {
                             render={({ field }) => (
                                 <PhoneInput
                                     {...field}
-                                    country="us"
+                                    country="ni"
                                     inputProps={{
                                         name: 'cellphone',
                                         required: true,

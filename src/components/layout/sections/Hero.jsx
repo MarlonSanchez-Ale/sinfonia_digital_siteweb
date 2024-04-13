@@ -15,7 +15,7 @@ export default function Hero() {
         <img src={Bombilla} loading='lazy' className=' md:w-96 md:h-96' />
       </div>
       <div className='flex flex-col gap-2 justify-center'>
-        <div className='flex flex-col gap-2'>
+        <div className='flex flex-col gap-4'>
           <p className='description text-start'>Agencia creativa</p>
           <h1 className='title_principal text-start'>Un equipo apasionado por el marketing <span className='title_contrast'>digital</span></h1>
           <p className='subtitle text-start'>¡Convertimos la visión de tu marca en realidad!</p>
