@@ -4,7 +4,7 @@ import Footer from '../../elements/Footer/Footer';
 
 function FormatLayout({ children }) {
     return (
-        <div className='flex flex-col w-full p-0'>
+        <div className='flex flex-col w-full'>
             <Header />
             <main className=''>{children}</main>
             <Footer />

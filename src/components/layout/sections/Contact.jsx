@@ -8,14 +8,14 @@ export default function Contact() {
     const UrlWhatsapp = "https://wa.link/k7p4p9"
 
     return (
-        <section id="contact" className="flex flex-col gap-10 justify-center lg:min-h-[90vh] my-40">
+        <section id="contact" className="flex flex-col gap-10 justify-center min-h-[90vh] sm:px-5 lg:px-20 my-28">
             <div className="flex flex-col gap-3 justify-center">
                 <h2 className="title_principal">Compartínos tus <span className="title_contrast">ideas</span></h2>
                 <p className="description"></p>
             </div>
-            <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-20 mt-10">
-                <div className="flex flex-col sm:order-last md:order-first justify-start place-items-start text-start gap-3">
-                    <h5 className=" font-nourd text-xl text-bluesd">¿Estás listo para dar el primer paso?</h5>
+            <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-10 mt-5">
+                <div className="flex flex-col justify-start place-items-start text-start lg:pr-10 gap-3">
+                    <h5 className="font-nourd text-xl text-bluesd">¿Estás listo para dar el primer paso?</h5>
                     <p className="description">
                         Tu marca merece trabajar en las mejores manos. ¡Estaremos contentos de comenzar una nueva experiencia con vos! 
                     </p>

@@ -10,7 +10,7 @@ export default function Hero() {
   const UrlWhatsapp = "https://wa.link/k7p4p9"
 
   return (
-    <section id="hero" className="lg:min-h-[90vh] grid sm:grid-cols-1 lg:grid-cols-2 gap-5 ">
+    <section id="hero" className="lg:min-h-[90vh] grid sm:grid-cols-1 lg:grid-cols-2 sm:p-5 lg:p-0 ">
       <div className='grid place-items-center'>
         <img src={Bombilla} loading='lazy' className=' md:w-96 md:h-96' />
       </div>
@@ -25,9 +25,9 @@ export default function Hero() {
             as="li"
             variant="small"
             color="blue-gray"
-            className=" font-rubik bg-yellowsd rounded-md p-3 w-32  shadow-md hover:bg-bluesd mt-3"
+            className=" font-rubik bg-yellowsd rounded-md p-4 sm:w-44 md:w-56  shadow-md hover:bg-bluesd mt-3"
           >
-            <a href="#contact" className="flex text-rubik items-center text-gray-100 transition-colors">
+            <a href="#contact" className="flex text-rubik items-center text-xl text-gray-100 transition-colors">
               Conocé más
             </a>
           </Typography>
