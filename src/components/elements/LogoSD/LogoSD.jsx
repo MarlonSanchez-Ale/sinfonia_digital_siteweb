@@ -1,4 +1,4 @@
-import logo from '../../../assets/img/icono_sd.jpg'
+import logo from '../../../assets/img/icono.png'
 
 export default function LogoSD() {
   return (

@@ -34,10 +34,15 @@ export default function ContactForm() {
         resolver: yupResolver(schema),
     })
 
+    const service_contact = import.meta.env.VITE_SERVICE_KEY
+    const template_contact = import.meta.env.VITE_TEMPLATE_KEY
+    const publiyKey_contact = import.meta.env.VITE_PUBLIC_KEY
+
+   
     const onSubmit = () => {
         //console.log(data)
         emailjs
-            .sendForm('service_xqwgf4a', 'template_cwxlmsf', 'form', { publicKey: 'Cabs0zO-cptO-38B1' })
+            .sendForm(service_contact, template_contact, 'form', { publicKey: publiyKey_contact })
             .then(() => {
                 Swal.fire({
                     position: "center",
