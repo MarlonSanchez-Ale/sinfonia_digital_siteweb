@@ -7,6 +7,8 @@ import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
 import PhoneInput from 'react-phone-input-2'
 import 'react-phone-input-2/lib/style.css'
+import ReCAPTCHA from "react-google-recaptcha";
+import { useRef } from "react";
 
 const schema = yup
     .object({
@@ -34,43 +36,57 @@ export default function ContactForm() {
         resolver: yupResolver(schema),
     })
 
+    const recaptchaRef = useRef();
+
     const service_contact = import.meta.env.VITE_SERVICE_KEY
     const template_contact = import.meta.env.VITE_TEMPLATE_KEY
     const publiyKey_contact = import.meta.env.VITE_PUBLIC_KEY
+    const clave_sitio_recaptcha = import.meta.env.VITE_CLAVE_SITIO_RECAPTCHA
 
-   
-    const onSubmit = () => {
-        //console.log(data)
-        emailjs
-            .sendForm(service_contact, template_contact, 'form', { publicKey: publiyKey_contact })
-            .then(() => {
-                Swal.fire({
-                    position: "center",
-                    icon: "success",
-                    title: "¡Gracias por tu mensaje!",
-                    text: `Te responderemos lo antes posible. 
-                         ¡Que tengas un gran día!"`,
-                    showConfirmButton: true,
-                });
-                reset()
-            },
-                (error) => {
+    const onSubmit = async () => {
+        const token = await recaptchaRef.current.executeAsync();
+
+        if (token) {
+            emailjs
+                .sendForm(service_contact, template_contact, 'form', { publicKey: publiyKey_contact })
+                .then(() => {
                     Swal.fire({
                         position: "center",
-                        icon: "error",
-                        title: "Error de envío",
-                        text: error.text,
+                        icon: "success",
+                        title: "¡Gracias por tu mensaje!",
+                        text: `Te responderemos lo antes posible. 
+                         ¡Que tengas un gran día!"`,
                         showConfirmButton: true,
                     });
+                    reset()
                 },
-            );
+                    (error) => {
+                        Swal.fire({
+                            position: "center",
+                            icon: "error",
+                            title: "Error de envío",
+                            text: error.text,
+                            showConfirmButton: true,
+                        });
+                    },
+                );
+        } else {
+
+            Swal.fire({
+                position: "center",
+                icon: "error",
+                title: "Control antispam",
+                text: `Debes verificarte correctamente`,
+                showConfirmButton: true,
+            });
+        }
     }
 
     const handlePhoneBlur = (value) => {
         setValue('cellphone', value);
     };
 
-  
+
 
     return (
         <div className="grid place-items-center w-full p-5 gap-5 bg-white rounded-md shadow-md">
@@ -87,7 +103,7 @@ export default function ContactForm() {
                         <p className=" text-sm text-red-600">{errors.user_name?.message}</p>
                     </div>
                     <div className="w-full">
-                    <Select
+                        <Select
                             label="Asunto"
                             className="text-start"
                             onChange={(val) => setValue("user_subject", val)}
@@ -132,8 +148,16 @@ export default function ContactForm() {
                         />
                         <p>{errors.cellphone?.message}</p>
                     </div>
+
                 </div>
                 <Textarea label="Mensaje" {...register('message')} />
+                <div className="flex justify-center">
+                    <ReCAPTCHA
+                        sitekey={clave_sitio_recaptcha}
+                        size="invisible"
+                        ref={recaptchaRef}
+                    />
+                </div>
                 <Button size="lg" type="submit" className=" bg-yellowsd">Enviar mensaje</Button>
             </form>
         </div>
