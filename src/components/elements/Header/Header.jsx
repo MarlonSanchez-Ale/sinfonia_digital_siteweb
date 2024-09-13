@@ -71,7 +71,7 @@ export default function Header() {
     }, []);
 
     return (
-        <Navbar className="mx-auto  max-w-screen-xl px-6 py-3 bg-graysd">
+        <Navbar className="mx-auto  max-w-screen-xl px-6 py-3 mt-5 bg-white">
             <div className="flex items-center justify-between text-blue-gray-900">
                 <LogoSD />
                 <div className="hidden lg:block">

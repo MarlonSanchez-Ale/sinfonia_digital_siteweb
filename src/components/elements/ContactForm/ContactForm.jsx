@@ -91,7 +91,7 @@ export default function ContactForm() {
     return (
         <div className="grid place-items-center w-full p-5 gap-5 bg-white rounded-md shadow-md">
             <div className="flex flex-col gap-1 justify-center">
-                <h5 className=" font-nourd text-lg text-bluesd">Envíanos tu mensaje</h5>
+                <h3 className=" font-nourd text-lg text-bluesd">Envíanos tu mensaje</h3>
                 <p className="description">
                     Nos pondremos en contacto con vos a  la brevedad  posible
                 </p>

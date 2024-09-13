@@ -55,7 +55,7 @@ export default function Services() {
                         <span className=" text-gray-400 text-center">- - - - - - - - - - - - - - - -</span>
                     </div>
                     <div className="flex flex-col justify-center place-items-start gap-2 text-start">
-                        <h5 className=" font-nourd text-bluesd text-xl">Redes sociales</h5>
+                        <h3 className=" font-nourd text-bluesd text-xl">Redes sociales</h3>
                         <p className="description">
                             <span className="text-yellowsd mr-3">✔</span>
                             Administración de redes sociales.
@@ -82,7 +82,7 @@ export default function Services() {
                 >
                     <div className="flex flex-col md:pl-12 lg:pl-56 sm:order-last md:order-first gap-2 text-start">
                         <div className="">
-                            <h5 className=" font-nourd text-bluesd text-xl">Diseño</h5>
+                            <h3 className=" font-nourd text-bluesd text-xl">Diseño</h3>
                             <p className="description">
                                 <span className="text-yellowsd mr-3">✔</span>
                                 Libro de marca.
@@ -120,7 +120,7 @@ export default function Services() {
                         <span className=" text-gray-400 text-center">- - - - - - - - - - - - - - - -</span>
                     </div>
                     <div className="flex flex-col justify-center place-items-start gap-2 text-start">
-                        <h5 className=" font-nourd text-bluesd text-xl">Estrategias</h5>
+                        <h3 className=" font-nourd text-bluesd text-xl">Estrategias</h3>
                         <p className="description">
                             <span className="text-yellowsd mr-3">✔</span>
                             Campañas publicitarias.
@@ -145,7 +145,7 @@ export default function Services() {
                     exit={{ x: 0 }}
                     transition={{ type: "spring" }}>
                     <div className="flex flex-col sm:order-last md:order-first md:justify-center gap-2 text-start ">
-                        <h5 className=" font-nourd text-bluesd text-xl">Desarrollo Web</h5>
+                        <h3 className=" font-nourd text-bluesd text-xl">Desarrollo Web</h3>
                         <p className="description">
                             <span className="text-yellowsd mr-3">✔</span>
                             Sitios web.

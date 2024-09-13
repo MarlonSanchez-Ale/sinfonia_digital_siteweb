@@ -25,7 +25,7 @@ const EntrancePage = () => {
             >
                 <div className="flex flex-col gap-10 place-items-center justify-center h-screen ">
                     <motion.img animate={{ rotate: 360, scale: [1, 2, 1] }} transition={{ duration: 1, repeat: 1 }} src={iconoSd} className='w-24 h-24 text-bluesd' />
-                    <h1 className="text-6xl font-bold font-nourd text-bluesd">Sinfonía <span className='text-yellowsd'>Digital</span></h1>
+                    <p className="text-6xl font-bold font-nourd text-bluesd">Sinfonía <span className='text-yellowsd'>Digital</span></p>
                 </div>
             </motion.section>
         </MotionConfig>
