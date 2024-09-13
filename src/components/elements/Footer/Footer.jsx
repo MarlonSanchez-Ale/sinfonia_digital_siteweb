@@ -5,7 +5,7 @@ import { TbMailFilled } from "react-icons/tb";
 
 export default function Footer() {
     return (
-        <footer className="w-full bg-white sm:px-5  lg:px-10 p-10  rounded-md">
+        <footer className="w-full bg-white sm:px-5  lg:px-10 p-10 rounded-md">
             <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 text-center md:justify-between">
                 <div className="flex flex-col gap-3 place-items-start text-start">
                     <LogoSD />
